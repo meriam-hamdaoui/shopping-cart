@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+body{      
+    background: rgb(240, 234, 235);   
+}
+/* styling the titles */
+.store-nav a, h1{
+    align-self: center;
+    font-family:'Tangerine', serif;    
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+    color: #9a0980; 
+    text-decoration: none;
+}
+.store-nav a:hover{
+    color: #9a0980; 
+    text-decoration: none;
+}
+/* the under line */
+hr{    
+    border-top: 2px double #9a0980;
+    overflow: visible;
+    text-align: center;
+    height: 5px;   
+}
+/* styling the navbar  */
+.header-nav{   
+    /* border: 1px solid black;  */
+    position: sticky;
+    align-items: center;
+    box-shadow: 0 5px 10px #f5e5e5;
+    /*  */
+    display: flex; /*align the item in the nav tag*/
+    justify-content: space-between;
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */  
+    width: 100%;
+    top: 0; /* At the top */
+    z-index: 99; 
+    background-color: hsla(0,0%,100%,.98);
+    height: 65px;
+}
+.navbar {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 6%;
+}
+/* left part of the navbar */
+.store-nav{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 400px;
+    /* margin-left: 1%; */
+    margin-top: 5px;
+}
+.store-nav img{
+    width: 50px;
+    height: 50px;
+}
+
+/* right part navbar */
+.menu-nav{
+    /* border: 1px solid red; */
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 100px;  
+}
+.card, .list, .logout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item{
+    border: 0;
+}
+.menu-item i{
+    color: #9a0980;
+    cursor: pointer;
+}
+
+.menu-item a{
+    text-decoration: none;
+    font: 15px Roboto, Arial, sans-serif;      
+    color: #ae2bc5;
+}
+
+/* styling the cart section */
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    gap: 25px;
+    margin-bottom: 50px;
+    margin-left: 10%;
+}
+.shop-items{
+    /* border: 1px solid black; */
+    width: 300px;
+    height: 400px; 
+    margin-left: 7%;  
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-radius: 5%;
+}
+.shop-item-title, .cart-item-title{
+    align-self: center;
+    font-family:'Tangerine', serif;    
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    color: #9a0980; 
+}
+.shop-item-img{
+    width: 250px;
+    height: 300px;
+    transition: transform .2s; /* Animation */
+}
+.shop-item-img:hover{
+    transform: scale(1.2); /* (120% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.shop-item-price{
+    margin-right: 25px;
+}
+.shop-item-button{
+    margin-left: 40px;
+    text-align: center;
+}
+.shop-item-button:hover{
+    background-color: rgb(204, 40, 95);
+}
+.fa-heart{
+    border: 0;
+    margin: 5%;
+    font-size: 20px;
+    outline: none;
+    color: gray;
+}
+.fa-heart:hover{
+    color: palevioletred;
+    cursor: pointer;
+}
+
+/* styling  favorite section */
+.favorite-items{
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 30px;
+    width: 80%;    
+    margin-left: 150px;
+}
+
+.favorite-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.favorite-item-img{
+    width: 100px;
+    height: 100px;
+}
+
+/* styling cart section */
+.cart-container{    
+    display: grid;
+    grid-template-rows: auto;
+    width: 80%;    
+    margin-left: 150px;
+
+}
+.cart-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 15px;
+}
+
+.head-fav, .head-cart{
+     margin-left: 50px;
+    padding-right: 25px;
+    align-self: center;
+    font-family:'Tangerine', serif;    
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    color: #9a0980;
+}
+
+.cart-total-title {
+    font-size: 45px;
+    font-family:'Tangerine', serif;
+}
+.cart-quantity-input{
+    width: 50px;
+}
+
+.cart-total-price{
+    font-size: 25px;
+} 
+.copyright{
+    text-align: center;
+    font-family:'Tangerine', serif;    
+    font-weight: 900;
+    font-size: 30px;
+}

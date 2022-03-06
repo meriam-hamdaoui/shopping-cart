@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- fontawesome scripts -->
+    <script src="https://kit.fontawesome.com/c504ca20c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- google font-style -->
+    <link href="https://fonts.googleapis.com/css?family=Tangerine"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+
+
+
+    <title>My Shopping Cart</title>
+    <link rel="icon" href="res/store-icon.png" type="img/x-icon">
+    <link rel="stylesheet" href="styles/cart.css">    
+
+</head>
+<body>
+    <nav class="header-nav">
+        <div class="navbar">
+            <div class="store-nav">
+                <img src="res/shop-logo.jpg" alt="shop-logo">
+                <a href="#store" class="h1">Shopping Mood</a>
+            </div>
+            <nav class="menu-nav"> 
+                <div class="menu-item list">
+                    <i class="fa-regular fa-heart"></i>
+                    <a href="#favorite">Favorite</a> 
+                </div>              
+                <div class="menu-item card"> 
+                    <i class="fa-brands fa-opencart"></i>
+                    <a href="#cart">My Cart</a>
+                </div>
+                <div class="menu-item logout"> 
+                    <i class="fa-solid fa-right-from-bracket"></i> 
+                    <a href="home.html">Logout</a> 
+                </div>          
+            </nav>
+        </div>
+    </nav>
+    <div id="store">
+        <h1>My Happy Shop</h1>
+        <hr> 
+        <section class="container content-section"> 
+            <!-- first item in shop-->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><strong>Robe Pastel</strong></span> 
+                </div>
+                <div class="shop-item-icon heart-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img class="shop-item-img" src="res/summer-dress.jpg" alt="summer dress">
+                </div>
+                <div class="shop-item-details">                
+                    <span class="shop-item-price"><strong>€45.99</strong></span>                
+                    <button class="btn btn-primary shop-item-button" 
+                        type="button">TO CART</button>
+                </div>
+            </div>
+            <!-- second item in shop-->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><strong>Robe Norma</strong></span> 
+                </div>
+                <div class="shop-item-icon heart-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img class="shop-item-img" src="res/black-dress.jpg" alt="black dress">
+                </div>
+                <div class="shop-item-details">                
+                    <span class="shop-item-price"><strong>€59.99</strong></span>                
+                    <button class="btn btn-primary shop-item-button" 
+                        type="button">TO CART</button>
+                </div>
+            </div>
+
+            <!-- third item in shop-->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><strong>Robe Blanc</strong></span> 
+                </div>
+                <div class="shop-item-icon heart-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img class="shop-item-img" src="res/white-dress.jpg" alt="white dress">
+                </div>
+                <div class="shop-item-details">                
+                    <span class="shop-item-price"><strong>€79.99</strong></span>                
+                    <button class="btn btn-primary shop-item-button" 
+                        type="button">TO CART</button>
+                </div>
+            </div>
+
+            <!-- 4th item in shop -->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><strong>Veste Nacre</strong></span> 
+                </div>
+                <div class="shop-item-icon heart-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img class="shop-item-img" src="res/white-blous.jpg" alt="white blous">
+                </div>
+                <div class="shop-item-details">                
+                    <span class="shop-item-price"><strong>€59.99</strong></span>                
+                    <button class="btn btn-primary shop-item-button" 
+                        type="button">TO CART</button>
+                </div>
+            </div>
+
+            <!-- 5th item in shop -->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><strong>Veste Polo</strong></span> 
+                </div>
+                <div class="shop-item-icon heart-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img class="shop-item-img" src="res/green-blous.jpg" alt="green blous">
+                </div>
+                <div class="shop-item-details">                
+                    <span class="shop-item-price"><strong>€75.99</strong></span>                
+                    <button class="btn btn-primary shop-item-button" 
+                        type="button">TO CART</button>
+                </div>
+            </div>
+
+            <!-- 6th item in shop -->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><strong>Veste Noir</strong></span>
+                </div>
+                <div class="shop-item-icon heart-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img class="shop-item-img" src="res/black-blous.jpg" alt="black blous">
+                </div>
+                <div class="shop-item-details">                
+                    <span class="shop-item-price"><strong>€59.99</strong></span>                
+                    <button class="btn btn-primary shop-item-button" 
+                        type="button">TO CART</button> 
+                </div>
+            </div>
+
+            <!-- 7th item in shop -->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><strong>Baskets Graf</strong></span>
+                </div>
+                <div class="shop-item-icon heart-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img class="shop-item-img"src="res/white-sneaker.jpg" alt="white sneaker">
+                </div>
+                <div class="shop-item-details">                
+                    <span class="shop-item-price"><strong>€55.99</strong></span>                
+                    <button class="btn btn-primary shop-item-button" 
+                        type="button">TO CART</button> 
+                </div>
+            </div>
+
+            <!-- 8th item in shop -->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><strong>Bottines Peckham</strong></span>
+                </div>
+                <div class="shop-item-icon heart-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img class="shop-item-img" src="res/bottines.jpg" alt="bottines">
+                </div>
+                <div class="shop-item-details">                
+                    <span class="shop-item-price"><strong>€69.99</strong></span>                
+                    <button class="btn btn-primary shop-item-button" 
+                        type="button">TO CART</button> 
+                </div>
+            </div>
+
+            <!-- 9th item in shop -->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><strong>Sandales Luna</strong></span>
+                </div>
+                <div class="shop-item-icon heart-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img class="shop-item-img" src="res/sandales.jpg" alt="sandales">
+                </div>
+                <div class="shop-item-details">                
+                    <span class="shop-item-price"><strong>€69.99</strong></span>                
+                    <button class="btn btn-primary shop-item-button" 
+                        type="button">TO CART</button> 
+                </div>
+            </div>
+            
+            <!-- 10 items in shop -->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><strong>Sac à main</strong></span>
+                </div>
+                <div class="shop-item-icon heart-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img class="shop-item-img" src="res/hand-bag.jpg" alt="sac à main">
+                </div>
+                <div class="shop-item-details">                
+                    <span class="shop-item-price"><strong>€24.99</strong></span>                
+                    <button class="btn btn-primary shop-item-button" 
+                        type="button">TO CART</button> 
+                </div>
+            </div>
+
+            <!-- 11 items in shop -->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><strong>Brick Lane</strong></span>
+                </div>
+                <div class="shop-item-icon heart-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img class="shop-item-img" src="res/watch.jpg" alt="watch">
+                </div>
+                <div class="shop-item-details">                
+                    <span class="shop-item-price"><strong>€269.99</strong></span>                
+                    <button class="btn btn-primary shop-item-button" 
+                        type="button">TO CART</button> 
+                </div>
+            </div>
+
+            <!-- 12 items in shop -->
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title"><strong>Bague d'Or</strong></span>
+                </div>
+                <div class="shop-item-icon heart-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div>
+                    <img class="shop-item-img" src="res/ring.jpg" alt="ring">
+                </div>
+                <div class="shop-item-details">                
+                    <span class="shop-item-price"><strong>€599.99</strong></span>                
+                    <button class="btn btn-primary shop-item-button" 
+                        type="button">TO CART</button> 
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <section class="favorite-section" id="favorite">
+        <h1>My favorite Items</h1>
+        <hr>
+        <div class="favorite-container content-section"> 
+            <div class="favorite-items">
+                <!-- favorite-row -->
+                <div class="favorite-row">
+                    <span class="head-fav"><strong>Items </strong></span>                    
+                    <span class="head-fav"><strong> Price </strong></span>                    
+                    <span class="head-fav"><strong>Delete </strong></span>                    
+                </div>  
+                <!-- favorite item for testing -->         
+                <div class="favorite-row">
+                    <div class="favorite-item favorite-colum">
+                        <img class="favorite-item-img shop-item-img" src="res/orange-blous.jpg" alt="orange blous" width="100" height="100">
+                        <span class="favorite-item-title shop-item-title">Veste Orange</span>
+                    </div>
+                    <span class="favorite-price favorite-colum shop-item-price">€39.99</span>
+                    <div class="favorite-quantity favorite-colum">                                                
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+
+            </div>            
+        </div>
+        
+    </section>
+
+    
+    <section class="cart-section" id="cart">
+        <h1>My Cart</h1>
+        <hr>
+        <div class="cart-container">
+            <div class="cart-row">
+                <div class="head-cart"> <strong> Items </strong></div>                    
+                <div class="head-cart"> <strong>  Price </strong></div>                    
+                <div class="head-cart"> <strong> Quantity </strong></div>                    
+            </div>
+            <!-- cart item for testing -->
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-colum">
+                        <img class="cart-item-img" src="res/derbies.jpg" alt="derbies" width="100" height="100">
+                        <span class="cart-item-title">Derbies</span>
+                    </div>
+                    <span class="cart-price cart-colum">€19.99</span>
+                    <div class="cart-quantity cart-colum">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" type="button">REMOVE</button>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="cart-row">
+                <!-- <div class="cart-total"> -->
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">€19.99</span>
+                <!-- </div> -->
+
+                <button class="btn btn-primary btn-buy" type="button">BUY IT</button>
+            </div>
+            
+        </div>
+        
+    </section>
+
+
+     <hr> 
+     <!-- the footer section where i placed the copie right -->
+    <footer> 
+        <div class="copyright">
+            <p>©2022 Shopping Mood</p>
+        </div>
+    </footer>
+
+    
+    
+    
+
+    <script src="scripts/cart.js"></script>
+    
+</body>
+</html>
